@@ -1,0 +1,21 @@
+<div class="form_comment">
+<h3>Deixe seu comentário</h3>
+<%= form_for [post, comment ] do |f| %>
+	<%= error_messages_for comment %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>

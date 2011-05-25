@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Unisul</title>
+  <%= stylesheet_link_tag 'common' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo"></div>
+	</div>
+
+	<div id="wrapper">
+		
+		<div id="content">
+			<%= yield %>
+		</div>
+		
+  	<div id="footer">
+			&copy;Blog Unisul 2011
+  	</div>
+
+	</div>
+</body>
+</html>

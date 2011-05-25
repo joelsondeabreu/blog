@@ -1,0 +1,247 @@
+/*
+verison: beta
+author: Joelson de Abreu
+email: joelsondeabreu@gmail.com
+website: www.joelsondeabreu.com
+*/
+*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background:none repeat scroll 0 0 transparent;
+	border:0 none;
+	margin:0;
+	outline:0 none;
+	padding:0;
+	vertical-align:baseline;
+	color:#333;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+body {
+  text-align: center; 
+  min-width: 920px;
+  background:#FFF;
+}
+label{
+	width:15%;
+	float:left;
+	text-align:right;
+	margin-right:30px;
+	font-weight:bold;
+	color:#02426c;
+	font-size:1.2em;
+}
+a.button, input[type='submit'] {
+	font-size:.9em;
+	text-decoration:none;
+	background:#DDD;
+	border:1px solid #DDD;
+	padding:3px 15px;
+	color:#999;
+	text-shadow:#FFF 1px 1px 0;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #DDD, #FFF);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDD), to(#FFF));
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DDD',endColorstr='#FFF');
+	-webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -khtml-border-radius:5px;
+  border-radius:5px;
+}
+a.button:hover,input[type='submit']:hover {
+	background-image: -moz-linear-gradient(100% 100% 90deg, #FFF, #DDD);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#DDD));
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFF',endColorstr='#DDD');
+}
+h1 {
+  font-size: 2.4em;
+  font-weight: normal;
+	color:#02426c;
+}
+h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+h1, h2, p {
+  margin: 1em 0;
+}
+h2 span{
+	color:#999;
+	position:relative;
+	top:8px;
+}
+h2 a{
+	text-decoration:none;
+	color:#02426c;
+	border:none;
+	background:none;
+	padding:0;
+	text-shadow:#DDD 2px 2px 0;
+}
+h2 a:hover{
+	border:none;
+	background:none;
+	padding:0;
+	color:#02426c;
+}
+h2 span{
+	color:#ddd;
+	float:right;
+	font-size:.5em;
+}
+#header {
+  height: 150px;
+	border-bottom:#DDD 1px solid;
+	background:#DDD;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #DDD, #FFF);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDD), to(#FFF));
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DDD',endColorstr='#FFF');
+}
+#logo{
+	width:146px;
+	height:135px;
+  background:url(../images/unisul.png) no-repeat right center;
+	position:relative;
+	left:10%;
+	top:8px;
+}
+#footer {
+  padding: 1px 20px;
+  font-size:11px;
+  text-align:center;
+  clear: both;
+}
+#wrapper{
+  width: 80%;
+	background:#FFF;
+  margin: 0 auto; 
+  text-align: left;
+}
+#content { 
+  width: 100%; 
+  float: left;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.posts{
+	border-bottom:1px dashed #DDD;
+	padding-bottom:15px;
+}
+.posts p{
+	font-size:.9em;
+	color:#02426c;
+}
+.field{
+	padding:5px;
+}
+.field input, textarea, select{
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	border:1px solid #DDD;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+	padding:5px;
+	font-size:1em;
+	background: #F5F5F5;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #f9f9f9, #FFF);  
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#DDD));
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f9f9f9',endColorstr='#DDD');
+	width:65%;
+}
+.field textarea{
+	height:250px;
+}
+.actions{	
+	float:right;
+	margin:5px 166px 0 0;
+}
+
+.form_comment{
+	float:left;
+	width:50%;
+	border:1px solid #DDD;
+	font-size:.7em;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+	padding:5px;
+}
+.form_comment textarea{
+	height:100px;
+}
+.form_comment .actions{
+	margin:5px 64px 0 0;
+}
+#comments {
+	margin-top:20px;
+	padding:20px;
+	border-top:#DDD 1px dotted;
+}
+#comments p {
+	color:#060;	
+}
+.comment{
+	margin-top:10px;
+	font-size:.9em;
+	width:60%;
+	padding:5px;
+	background:#FFC;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #FF9;
+}
+.comment span{
+	color:#999;
+	font-size:.8em;
+}
+
+#notice {
+  color: green;
+}
+.field_with_errors input, .field_with_errors textarea, .field_with_errors select {
+  border-color:#C00;
+}
+.field_with_errors label {
+  color:#C00;
+}
+#error_explanation {
+	margin-top:10px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background:#FFC;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+	border-color:#FC0;
+}
+#error_explanation h2 {
+  font-weight:bold;
+	text-align: left;
+  padding: 5px 5px 5px 15px;
+  font-size: 1em;
+  margin: -7px;
+  color: #C00;
+}
+#error_explanation ul {
+	padding:5px 0;
+}
+#error_explanation ul li {
+  list-style: none;
+	margin-left:20px;
+}
+a.delete{
+	float:right;
+	position:relative;
+	top:-15px;
+	opacity:0.50;
+	-moz-opacity: 0.50;
+	filter: alpha(opacity=50);
+}
+a.delete:hover{
+	opacity:1;
+	-moz-opacity:1;
+	filter: alpha(opacity=100);	
+}

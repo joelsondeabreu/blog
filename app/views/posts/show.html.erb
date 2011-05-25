@@ -1,0 +1,20 @@
+<%= link_to '« Voltar', posts_path, :class => 'button' %>
+<p id="notice"><%= notice %></p>
+
+<h2>
+	<%= link_to @post.title.titleize, post_path(@post) %>
+	<span>Postado <%= @post.created_at %></span>
+</h2>
+<%= @post.body.html_safe %>
+
+<div id="comments">
+<% if @post.comments.any? %>
+  <%= render @post.comments %>
+<% else %>
+  <p>Nenhum comentário ainda.</p>
+<% end %>
+</div>
+
+<div id="comment_form">
+  <%= render "comments/form", :post => @post, :comment => Comment.new %>
+</div>

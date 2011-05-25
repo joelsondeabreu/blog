@@ -1,0 +1,17 @@
+<%= link_to 'Nova Postagem', new_post_path, :class => 'button' %>
+<% @posts.each do |post| %>
+	<div class="posts">
+		<h2>
+			<%= link_to post.title.titleize, post_path(post) %>
+			<span>Postado <%= post.created_at %></span>
+		</h2>
+    <%= cut_word post.body, 605 %>
+		<br/>
+		<p>Comentários ( <%= post.comments.count %> )</p>
+		<hr>
+    <%= link_to 'Ver', post, :class => 'button' %>
+    <%= link_to 'Editar', edit_post_path(post), :class => 'button' %>
+    <%= link_to 'Excluir', post, :confirm => 'Are you sure?', :method => :delete, :class => 'button' %>
+	</div>
+
+<% end %>
